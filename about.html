@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Dark/Light mode toggle script -->
+
+ <script>
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.classList.add("dark-mode");
+}
+</script>
+  <link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts and to ensure fonts don't glitch across pages -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Delius&family=Imperial+Script&family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<!-- Navigation Bar with links to all pages  -->
+
+
+<nav class="navbar">
+
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+  </div>
+
+  <div class="nav-center">
+    <a href="about.html">About</a>
+
+     <button id="theme-toggle">
+  <span class="icon">🌙</span>
+  <span class="label">Dark Mode</span>
+</button>
+
+    <a href="projects.html">Projects</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+
+
+<div class="about-section"> 
+<section id="about">
+  <p class="heading2">Meet The Designer!</p>
+
+
+<p class="paragraph"> My journey into web development started the moment I discovered HTML — and I was instantly hooked. Turning simple lines of code into real,interactive designs felt like unlocking a new level.
+
+With a natural interest in both design and technology, front-end development became the perfect space for me to create,experiment,
+
+and bring ideas to life. I’ve since built my skills in HTML, CSS, and JavaScript through further study at Red & Yellow School of Creative Business. As an aspiring front-end developer, I enjoy pushing
+
+creative boundaries,exploring new layouts, and designing experiences that feel both modern and engaging. This is just the beginning of my journey — and I’m so excited for what’s next!</p>
+</section>
+</div>
+
+
+<img src="images/finaltin.png" class="keychain">
+
+
+
+  <script src="darkmode.js"></script>
+
+
+</body>
+</html>
+
