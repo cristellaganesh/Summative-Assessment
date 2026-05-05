@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Dark/Light mode toggle script -->
+
+<script>
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.classList.add("dark-mode");
+}
+</script>
+
+  <link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts and to ensure fonts don't glitch across pages -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Delius&family=Imperial+Script&family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- Navigation Bar with links to all pages  -->
+
+<nav class="navbar">
+
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+  </div>
+
+  <div class="nav-center">
+    <a href="about.html">About</a>
+
+        <button id="theme-toggle">
+  <span class="icon">🌙</span>
+  <span class="label">Dark Mode</span>
+</button>
+
+    <a href="projects.html">Projects</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="contact.html">Contact</a>
+   
+  </div>
+
+</nav>
+
+<!-- Hero section with title and recent portfolio projects -->
+
+<section class="hero-section">
+<section id="projects">
+  <p class="heading5">Recent Work Done: </p>
+</section>
+</section>
+
+
+<div class="images">
+  <img src="images/porsche.jpeg" class="golf">
+  <img src="images/portfolio.jpeg" class="porsche">
+  <img src="images/golfP.png" class="portfolio">
+</div>
+
+  <script src="darkmode.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
