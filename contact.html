@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Dark/Light mode toggle script -->
+
+<script>
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.classList.add("dark-mode");
+}
+</script>
+
+  <link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts and to ensure fonts don't glitch across pages -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Delius&family=Imperial+Script&family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<!-- Navigation Bar with links to all pages  -->
+
+<nav class="navbar">
+
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+  </div>
+
+  <div class="nav-center">
+    <a href="about.html">About</a>
+
+<button id="theme-toggle">
+  <span class="icon">🌙</span>
+  <span class="label">Dark Mode</span>
+</button>
+
+    <a href="projects.html">Projects</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+
+   <img src="images/phone.png" alt="Phone" class="phone">
+
+
+<!-- Contact form section with name, email, and message fields, and a submit button -->
+
+   <section class="contact-section" id="contact">
+  <p class="contact-heading">Contact Me</p>
+
+  <form class="contact-form" id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Modal for form submission confirmation, hidden by default and shown when the form is submitted -->
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <p>Message Sent ✨</p>
+    <p>Thanks for reaching out! I’ll get back to you soon.</p>
+    <button id="closeModal">Close</button>
+  </div>
+</div>
+
+
+<!-- JavaScript to handle form submission and modal display -->
+<script src="script.js" defer></script>
+<script type="module" src="contact.js"></script>
+
+  <script src="darkmode.js"></script>
+</body>
+</html>
